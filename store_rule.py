@@ -14,7 +14,7 @@ from pprint import pprint
 # Defining the host is optional and defaults to https://demo.firefly-iii.org
 # See configuration.py for a list of all supported configuration parameters.
 configuration = firefly_iii_client.Configuration(
-    host = "https://fireflyiii.mydomain.com"
+    host = "https://demo.firefly-iii.org"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -24,9 +24,10 @@ configuration = firefly_iii_client.Configuration(
 
 # Configure OAuth2 access token for authorization: firefly_iii_auth
 configuration = firefly_iii_client.Configuration(
-    host = "https://fireflyiii.mydomain.com"
+    host = "https://demo.firefly-iii.org"
 )
-configuration.access_token = 'YOUR_ACCESS_TOKEN'
+# Token generated for testing from https://demo.firefly-iii.org/profile
+configuration.access_token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiOGVkNDcyZGI3ZTY3YjljN2I3YTczYWIyYjU5NjA0ODc2M2UwN2RmN2Y0YTY4YWM4MWIwYTMzNWM5ZTc4Mzc1ZTk4NzdhZmI3ZDM3YzA4MzMiLCJpYXQiOjE2NTg2MzgwMDIuMzE2NDAxLCJuYmYiOjE2NTg2MzgwMDIuMzE2NDA2LCJleHAiOjE2OTAxNzQwMDEuOTM3OTU0LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.aHG5ijSUtAuuGXp8bGK9qrDQFJVePzjXUL3GOSiavxz9jsgye9gtL8soZS_-miJoUThCrNHurV097goMlEqB5IUUWzXBBHZQ6KeQOwb9aPAvIRGcw3wVrzt9FsqGUeEWYb0tNGouk-gLGsNf7sXvQzTbQeW0iY7uCe7_TLtqMmYSbkhi3L9mpuSvJ40AGuqo3FytOzusWu2BvlysDcQeAHCAiDJFulPi8Uad-VtvN77nmBwiVkwOl6PscrnjfH5cNnfasCWFyqsD-6SSHWusVexOecOghwGzIq7UFPtewXoCHB-V-XtvOMEswKY2cbHUxRlqYf6AXsfQjpuD0sRjVrgdDVdsChaPx8Ijr5Shd-wOTjM5RryOCyYBvA1fwBFLcqXYr1NgpVqmVU40Xt3iQArhoCcnLl5Id9b-uwas-pEsApj2AqKLB5RVPf0RAvgpdbRmdu0mu409CAsYNtklayzgMdqirpSX_XQoc2Y7cutfYhSvL3JdmJ-hARcZMJRzxb4gtZkY9BNxFWWzZgVBPhic0_DLdG7qZBzUnqgkncwxM-zhEMEIkKRZHinOrSXt5u0UwHyCrdrcfDItDyNd0tKvKNjBRD31wuw3bLTizZwovQsViUcErxmqaxnWP3PEtthJwbjeQGthyX5KWNC3lCwDKzxYNQI-fEfidOiqbqY'
 
 # Enter a context with an instance of the API client
 with firefly_iii_client.ApiClient(configuration) as api_client:
